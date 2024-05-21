@@ -4,6 +4,7 @@ using BenchmarkDotNet.Environments;
 using BenchmarkDotNet.Jobs;
 using BenchmarkDotNet.Running;
 using BenchmarkTests.Arrays;
+using BenchmarkTests.DateTimeTests;
 using System.Diagnostics;
 
 
@@ -36,3 +37,10 @@ BenchmarkRunner.Run<SingleMaterialization>();
 BenchmarkRunner.Run<AnyVsLength>();
 
 #endregion Массивы
+
+
+#region Даты
+
+BenchmarkRunner.Run<DateTimeMonthNameSpeed>();
+
+#endregion Даты
