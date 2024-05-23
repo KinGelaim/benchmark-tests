@@ -6,6 +6,7 @@ using BenchmarkDotNet.Running;
 using BenchmarkTests.Arrays;
 using BenchmarkTests.DateTimeTests;
 using BenchmarkTests.DegenerateMethods;
+using BenchmarkTests.ExceptionTests;
 using System.Diagnostics;
 
 
@@ -54,3 +55,8 @@ BenchmarkRunner.Run<DegenerateMethodsTests>();
 #endregion Вырожденные методы
 
 
+#region Исключения
+
+BenchmarkRunner.Run<NoExceptionTests>();
+
+#endregion Исключения
