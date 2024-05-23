@@ -5,6 +5,7 @@ using BenchmarkDotNet.Jobs;
 using BenchmarkDotNet.Running;
 using BenchmarkTests.Arrays;
 using BenchmarkTests.DateTimeTests;
+using BenchmarkTests.DegenerateMethods;
 using System.Diagnostics;
 
 
@@ -44,3 +45,12 @@ BenchmarkRunner.Run<AnyVsLength>();
 BenchmarkRunner.Run<DateTimeMonthNameSpeed>();
 
 #endregion Даты
+
+
+#region Вырожденные методы
+
+BenchmarkRunner.Run<DegenerateMethodsTests>();
+
+#endregion Вырожденные методы
+
+
