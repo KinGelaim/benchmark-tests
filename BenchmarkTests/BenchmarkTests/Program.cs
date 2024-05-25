@@ -8,6 +8,7 @@ using BenchmarkTests.DateTimeTests;
 using BenchmarkTests.DegenerateMethods;
 using BenchmarkTests.ExceptionTests;
 using BenchmarkTests.IQueryable;
+using BenchmarkTests.Reflection;
 using System.Diagnostics;
 
 
@@ -68,3 +69,11 @@ BenchmarkRunner.Run<NoExceptionTests>();
 BenchmarkRunner.Run<EnumToQueryableSpeedTests>();
 
 #endregion Queryable
+
+
+#region Рефлексия
+
+BenchmarkRunner.Run<EnumSpeedTests>();
+BenchmarkRunner.Run<GetSetNameSpeedTests>();
+
+#endregion Рефлексия
