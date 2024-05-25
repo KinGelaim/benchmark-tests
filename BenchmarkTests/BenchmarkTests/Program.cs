@@ -9,6 +9,7 @@ using BenchmarkTests.DegenerateMethods;
 using BenchmarkTests.ExceptionTests;
 using BenchmarkTests.IQueryable;
 using BenchmarkTests.Reflection;
+using BenchmarkTests.String;
 using System.Diagnostics;
 
 
@@ -77,3 +78,11 @@ BenchmarkRunner.Run<EnumSpeedTests>();
 BenchmarkRunner.Run<GetSetNameSpeedTests>();
 
 #endregion Рефлексия
+
+
+#region Строки
+
+BenchmarkRunner.Run<StringConcatTests>();
+BenchmarkRunner.Run<StringCompareTests>();
+
+#endregion Строки
